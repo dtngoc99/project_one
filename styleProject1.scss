@@ -1,0 +1,79 @@
+// @import'reset';
+// @import'variables';
+
+// .container{
+//     max-width: 1200px;
+//     margin: 0px auto;
+
+// }
+// .products{
+//     background: #eee;
+//     .container{
+//         .row{
+//             display: flex;
+//             flex-wrap: wrap;
+//             // margin-left: -$gutter;
+//             // margin-right: -$gutter;
+//             .item{
+//                 padding: $gutter/2;
+//                 width: 100%/$col;
+//                 img{
+//                     width: 100%;//bằng chiều dài với thẻ a
+//                 }
+//                 &-title{
+//                     a{
+//                         font-size:17px;
+//                         font-weight: normal;
+//                         color: rgba(#333, 0.6);//độ trong suốt là 0.6, làm chữ mờ đi
+//                     }
+//                 }
+//                 &-content{
+//                     transition: box-shadow 0.9s;//điều khiển tốc độ của hiệu ứng
+//                     background: white;
+//                     padding: 10px;
+//                     &:hover{
+//                         box-shadow: 0px 0px 10px -1px #333;//tạo bóng cho hộp
+//                     }
+//                     //border: 1px solid #333;
+//                 }
+//                 &-price{
+//                     span{
+//                         font-weight: normal;
+//                         font-size: 14px;
+//                         color: rgba(#333, 0.6);//độ trong suốt là 0.6, làm chữ mờ đi
+//                     }
+//                 }
+//                 &-price-del{
+//                     font-weight: normal;
+//                     text-decoration: line-through;//gạch ngang(gạch bỏ)
+//                     color: rgba(#333, 0.6);//độ trong suốt là 0.6
+//                 }
+//             }
+//         }
+
+//     }
+// }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form{
+    .language-search{
+        border: 1px solid rgba(#333, 0.2);
+        border-radius: 3px;
+        padding: 7px;
+        //click dô
+        transition: all 0.3s;
+        &:focus{
+            outline: 1px solid red;
+            box-shadow: 0px 0px 5px -2px red;
+        }
+    }
+    .option-list{
+        display: none;
+        border: 1px solid rgba(#333, 0.2);
+    }
+}
